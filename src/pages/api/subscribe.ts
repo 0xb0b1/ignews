@@ -17,22 +17,22 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
     const session = await getSession({ req });
 
-    // const user = await fauna.query<User>(
-    //   q.Get(q.Match(q.Index("user_by_email"), q.Casefold(session.user.email)))
-    // );
+    const user = await fauna.query<User>(
+      q.Get(q.Match(q.Index("user_by_email"), q.Casefold(session.user.email)))
+    );
 
     const stripeCustomer = await stripe.customers.create({
-      // email: session.user.email,
+      email: session.user.email,
       // metadata
     });
 
-    // await fauna.query(
-    //   q.Update(q.Get(q.Index("user_by_email"), user.ref.id), {
-    //     data: {
-    //       stripe_customer_id: stripeCustomer.id,
-    //     },
-    //   })
-    // );
+    await fauna.query(
+      q.Update(q.Get(q.Index("user_by_email"), user.ref.id), {
+        data: {
+          stripe_customer_id: stripeCustomer.id,
+        },
+      })
+    );
 
     const stripeCheckoutSession = await stripe.checkout.sessions.create({
       customer: stripeCustomer.id,
