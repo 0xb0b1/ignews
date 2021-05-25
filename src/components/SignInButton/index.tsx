@@ -5,7 +5,7 @@ import { FiX } from "react-icons/fi";
 
 import styles from "./styles.module.scss";
 
-export function SignInButton() {
+export const SignInButton = () => {
   const [session] = useSession();
 
   if (session) {
@@ -32,4 +32,4 @@ export function SignInButton() {
       Sign in With GitHub
     </button>
   );
-}
+};
