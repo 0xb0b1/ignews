@@ -13,7 +13,7 @@ interface HomeProps {
   };
 }
 
-const Home = ({ product }: HomeProps) => {
+export const Home = ({ product }: HomeProps) => {
   return (
     <>
       <Head>
