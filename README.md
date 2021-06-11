@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignews 💛🚀
 
-## Getting Started
+&nbsp;
 
-First, run the development server:
+![mock1](https://user-images.githubusercontent.com/71772559/113495090-3e529600-94c5-11eb-953c-53ab4f71fc15.png)
 
-```bash
-npm run dev
-# or
-yarn dev
+## 📚 Sobre o projeto
+
+* Projeto desenvolvido durante um dos capitulos do Ignite da Rocketseat! A ideia era desenvolver um blog pago onde você pode fazer login com o GitHub e pagar sua inscrição usando o Stripe. Usuários que não possuem a inscrição, só conseguem ver alguns parágrafos iniciais do post, orefecendo a inscrição logo abaixo.
+
+&nbsp;
+
+## 💻 Oque tem no projeto?
+
+* Uso do sistema estático do Next.js, onde os posts são mantidos no cache para um melhor carregamento.
+* Dados são salvos no bando do FaunDb.
+* Sistema de verificação de assinatura, o conteúdo exibido varia entre usuários com/sem assinatura paga.
+* Integração com o Prismic CMS, para trabalhar com toda a parte do sistema do blog.
+* Integração com o Stripe para a parte dos pagamentos das inscrições.
+* Integração com o NextAuth para a parte do login com o Github.
+
+## 🛠️ Tecnologias/Ferramentas ultilizadas
+
+* [React](https://pt-br.reactjs.org/E)
+* [Next.js](https://nextjs.org/)
+* [NextAuth](https://next-auth.js.org/)
+* [Prismic CMS](https://prismic.io/)
+* [Stripe](https://stripe.com/en-br)
+* [Fauna](https://fauna.com/)
+
+&nbsp;
+
+<img src="https://user-images.githubusercontent.com/71772559/113495413-dc476000-94c7-11eb-9d95-d3a301fc989b.gif" width="100%" />
+
+&nbsp;
+
+## ⚙️ Instalação
+```
+# Faça clone do projeto utilizando a CLI 
+$ git clone https://github.com/0xb0b1/ignews.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+# Acesse a pasta da aplicação
+$ cd ignews
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Crie um arquivo .env.local e coloque as variaveis
+# de ambiente baseado no arquivo .env.example
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Instalando as dependências
+$ yarn
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Inicie a aplicação 
+$ yarn start
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+&nbsp;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔗 Link para o projeto online
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+[Ignews](#)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+&nbsp;
