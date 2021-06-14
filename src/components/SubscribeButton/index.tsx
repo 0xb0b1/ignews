@@ -10,16 +10,11 @@ interface SubscribeButtonProps {
 
 export const SubscribeButton = ({ priceId }: SubscribeButtonProps) => {
   const [session] = useSession();
-  const router = useRouter();
+  // const router = useRouter();
 
   const handleSubscribe = async () => {
     if (!session) {
       signIn("github");
-      return;
-    }
-
-    if (session.activeSubscription) {
-      router.push("/posts");
       return;
     }
 
@@ -31,7 +26,7 @@ export const SubscribeButton = ({ priceId }: SubscribeButtonProps) => {
 
       const stripe = await getStripeJs();
 
-      await stripe.redirectToCheckout({ sessionId });
+      stripe.redirectToCheckout({ sessionId });
     } catch (err) {
       alert(err.message);
     }
