@@ -60,6 +60,6 @@ $ yarn start
 ### 🔗 Link para o projeto online
 
 
-[Ignews](#)
+[Ignews](https://pvcent-ignews.vercel.app/)
 
 &nbsp;
