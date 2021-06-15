@@ -17,6 +17,10 @@
 			border-top: 1px solid var(--gray-700);
 		}
 
+		&~a {
+			margin-bottom: 2rem;
+		}
+
 		time {
 			font-size: 1rem;
 			display: flex;
