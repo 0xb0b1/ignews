@@ -13,7 +13,7 @@ export const Header = () => {
           <ActiveLink activeClasName={styles.active} href="/">
             <a>Home</a>
           </ActiveLink>
-          <ActiveLink activeClasName={styles.active} href="/posts" prefetch>
+          <ActiveLink activeClasName={styles.active} href="/posts">
             <a>Posts</a>
           </ActiveLink>
         </nav>
