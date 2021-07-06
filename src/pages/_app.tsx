@@ -1,10 +1,7 @@
 import { Provider as NextAuthProvider } from "next-auth/client";
-
 import { AppProps } from "next/app";
-
-import { Header } from "../components/Header";
-
 // import NextNprogress from "nextjs-progressbar";
+import { Header } from "../components/Header";
 
 import "../styles/global.scss";
 
