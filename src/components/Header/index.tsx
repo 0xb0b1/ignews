@@ -1,8 +1,8 @@
-import { ActiveLink } from "../ActiveLink";
+import { ActiveLink } from '../ActiveLink'
 
-import { SignInButton } from "../SignInButton";
+import { SignInButton } from '../SignInButton'
 
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss'
 
 export const Header = () => {
   return (
@@ -20,5 +20,5 @@ export const Header = () => {
         <SignInButton />
       </div>
     </header>
-  );
-};
+  )
+}

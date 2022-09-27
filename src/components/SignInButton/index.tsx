@@ -1,12 +1,12 @@
-import { signIn, signOut, useSession } from "next-auth/client";
+import { signIn, signOut, useSession } from 'next-auth/client'
 
-import { FaGithub } from "react-icons/fa";
-import { FiX } from "react-icons/fi";
+import { FaGithub } from 'react-icons/fa'
+import { FiX } from 'react-icons/fi'
 
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss'
 
 export const SignInButton = () => {
-  const [session] = useSession();
+  const [session] = useSession()
 
   if (session) {
     return (
@@ -19,17 +19,17 @@ export const SignInButton = () => {
           onClick={() => signOut()}
         />
       </button>
-    );
+    )
   }
 
   return (
     <button
-      onClick={() => signIn("github")}
+      onClick={() => signIn('github')}
       type="button"
       className={styles.signInButton}
     >
       <FaGithub color="#eba417" />
       Sign in With GitHub
     </button>
-  );
-};
+  )
+}
